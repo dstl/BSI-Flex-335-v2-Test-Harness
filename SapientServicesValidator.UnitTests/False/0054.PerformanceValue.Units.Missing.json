@@ -1,0 +1,276 @@
+{
+  "timestamp": "2022-11-03T10:05:06.141204500Z",
+  "nodeId": "a8654cdf-4328-47de-81fa-c495589e30c9",
+  "destinationId": "a8654cdf-4328-47de-81fa-c495589e30c8",
+  "registration": {
+    "nodeDefinition": [
+      {
+        "nodeType": "NODE_TYPE_CAMERA",
+        "nodeSubType": [
+          "InfraredCamera"
+        ]
+      }
+    ],
+    "icdVersion": "BSI Flex 335 v2.0",
+    "name": "Car Park Camera at Entrance",
+    "short_name": "C1",
+    "capabilities": [
+      {
+        "category": "EMS",
+        "type": "Chaff, noise jamming, false targets, gate stealers, angle deception, and decoys.",
+        "value": "3000",
+        "units": "dB"
+      }
+    ],
+    "statusDefinition": {
+      "statusInterval": {
+        "units": "TIME_UNITS_SECONDS",
+        "value": 5
+      },
+      "locationDefinition": {
+        "locationUnits": "LOCATION_COORDINATE_SYSTEM_UTM_M",
+        "locationDatum": "LOCATION_DATUM_WGS84_E",
+        "zone": "30U"
+      },
+      "coverageDefinition": {
+        "locationUnits": "LOCATION_COORDINATE_SYSTEM_UTM_M",
+        "locationDatum": "LOCATION_DATUM_WGS84_E",
+        "zone": "30U"
+      },
+      "obscurationDefinition": {
+        "locationUnits": "LOCATION_COORDINATE_SYSTEM_UTM_M",
+        "locationDatum": "LOCATION_DATUM_WGS84_E",
+        "zone": "30U"
+      },
+      "statusReport": [
+        {
+          "category": "STATUS_REPORT_CATEGORY_SENSOR",
+          "type": "Distance",
+          "units": "M",
+          "onChange": true
+        }
+      ],
+      "fieldOfViewDefinition": {
+        "locationUnits": "LOCATION_COORDINATE_SYSTEM_UTM_M",
+        "locationDatum": "LOCATION_DATUM_WGS84_E",
+        "zone": "30U"
+      }
+    },
+    "modeDefinition": [
+      {
+        "modeName": "Default",
+        "modeType": "MODE_TYPE_PERMANENT",
+        "modeDescription": "Test Description",
+        "settleTime": {
+          "units": "TIME_UNITS_HOURS",
+          "value": "30"
+        },
+        "maximumLatency": {
+          "units": "TIME_UNITS_SECONDS",
+          "value": 1
+        },
+        "scanType": "SCAN_TYPE_STEERABLE",
+        "trackingType": "TRACKING_TYPE_TRACKLET",
+        "duration": {
+          "units": "TIME_UNITS_SECONDS",
+          "value": 1
+        },
+        "modeParameter": [
+          {
+            "type": "SelfAdaptation",
+            "value": "Range"
+          }
+        ],
+        "detectionDefinition": [
+          {
+            "locationType": {
+              "locationUnits": "LOCATION_COORDINATE_SYSTEM_UTM_M",
+              "locationDatum": "LOCATION_DATUM_WGS84_E",
+              "zone": "30U"
+            },
+            "detectionPerformance": [
+              {
+                "type": "FAR",
+                "units": "Per Second",
+                "unitValue": "1",
+                "variationType": "Linear with range"
+              }
+            ],
+            "detectionReport": [
+              {
+                "category": "DETECTION_REPORT_CATEGORY_OBJECT",
+                "type": "Test1",
+                "units": "Units1",
+                "onChange": true
+              }
+            ],
+            "detectionClassDefinition": [
+              {
+                "confidenceDefinition": "CONFIDENCE_DEFINITION_SINGLE_CLASS",
+                "classPerformance": [
+                  {
+                    "type": "FAR",
+                    "units": "Per Second",
+                    "unitValue": "1",
+                    "variationType": "Linear with range"
+                  }
+                ],
+                "classDefinition": [
+                  {
+                    "type": "Equipment",
+                    "units": "probability",
+                    "subClass": [
+                      {
+                        "type": "Weapon",
+                        "units": "probability",
+                        "level": "1",
+                        "subClass": [
+                          {
+                            "type": "Bomb",
+                            "units": "probability",
+                            "level": "2"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "taxonomyDockDefinition": [
+                  {
+                    "DockClassNamespace": "sapient_core",
+                    "DockClass": "Land Vehicle.2 Wheels.Other",
+                    "ExtensionSubclass": [
+                      {
+                        "SubclassNamespace": "https://auto.schema.org/",
+                        "SubclassName": "MotorizedBicycle",
+                        "units": "probability"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "behaviourDefinition": [
+              {
+                "type": "Walking",
+                "units": "meter per second"
+              }
+            ],
+            "velocityType": {
+              "enu_velocity_units": {
+                "eastNorthRateUnits": "SPEED_UNITS_MS",
+                "upRateUnits": "SPEED_UNITS_MS"
+              },
+              "locationDatum": "LOCATION_DATUM_WGS84_E"
+            },
+            "geometricError": {
+              "type": "Standard Deviation",
+              "units": "metres",
+              "variationType": "Linear with Range",
+              "performanceValue": [
+                {
+                  "type": "Rotation speed",
+                  "unitValue": "2.5",
+                  "variationType": "linear"
+                }
+              ]
+            }
+          }
+        ],
+        "task": {
+          "concurrentTasks": "1",
+          "regionDefinition": {
+            "regionType": [ "REGION_TYPE_AREA_OF_INTEREST" ],
+            "settleTime": {
+              "units": "TIME_UNITS_SECONDS",
+              "value": 1
+            },
+            "regionArea": [
+              {
+                "locationUnits": "LOCATION_COORDINATE_SYSTEM_UTM_M",
+                "locationDatum": "LOCATION_DATUM_WGS84_E",
+                "zone": "30U"
+              }
+            ],
+            "classFilterDefinition": [
+              {
+                "filterParameter": [
+                  {
+                    "parameter": "Position",
+                    "operators": [ "OPERATOR_ALL" ]
+                  }
+                ],
+                "subClassDefinition": [
+                  {
+                    "filterParameter": [
+                      {
+                        "parameter": "Position",
+                        "operators": [ "OPERATOR_ALL" ]
+                      }
+                    ],
+                    "level": 0,
+                    "type": "Vehicle",
+                    "subClassDefinition": [
+                      {
+                        "filterParameter": [
+                          {
+                            "parameter": "Position2",
+                            "operators": [ "OPERATOR_GREATER_THAN" ]
+                          }
+                        ],
+                        "level": 1,
+                        "type": "Human"
+                      }
+                    ]
+                  }
+                ],
+                "type": "Vehicle"
+              }
+            ],
+            "behaviourFilterDefinition": [
+              {
+                "filterParameter": [
+                  {
+                    "parameter": "Position",
+                    "operators": [ "OPERATOR_ALL" ]
+                  }
+                ],
+                "type": "Running"
+              }
+            ]
+          },
+          "command": [
+            {
+              "units": "Status",
+              "completionTime": {
+                "units": "TIME_UNITS_HOURS",
+                "value": "2"
+              },
+              "type": "COMMAND_TYPE_PATROL"
+            }
+          ]
+        }
+      }
+    ],
+    "dependentNodes": [ "6f582b41-6c88-481c-bb0f-6021a1739f57", "6acd78c1-fcc2-4368-b7ae-ff1aa318911c", "cee8b0c3-b739-49f5-9bd4-b5353b5ebb98" ],
+    "configData": [
+      {
+        "manufacturer": "ACME",
+        "model": "Vision123",
+        "serialNumber": "V000123",
+        "hardwareVersion": "1",
+        "softwareVersion": "2",
+        "subComponents": [
+          {
+            "manufacturer": "ACME",
+            "model": "Vision123_A",
+            "serialNumber": "V000123_A",
+            "hardwareVersion": "1",
+            "softwareVersion": "2"
+          }
+        ]
+      }
+    ]
+  },
+  "additionalInformation": "Windows talking painted pasture yet its express parties use. Sure last upon he same as knew next. Of believed or diverted no rejoiced. End friendship sufficient assistance can prosperous met. As game he show it park do. Was has unknown few certain ten promise. No finished my an likewise cheerful packages we. For assurance concluded son something depending discourse see led collected. Packages oh no denoting my advanced humoured. Pressed be so thought natural."
+}

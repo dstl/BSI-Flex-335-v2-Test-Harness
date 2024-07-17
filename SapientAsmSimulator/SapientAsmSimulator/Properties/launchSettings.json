@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "SapientAsmSimulator": {
+      "commandName": "Project",
+      "commandLineArgs": "14001 01H0N6FPMFYSETQPCMZXJ39PPA"
+    }
+  }
+}

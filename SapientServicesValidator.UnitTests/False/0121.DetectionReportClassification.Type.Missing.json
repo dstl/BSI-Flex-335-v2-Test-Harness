@@ -1,0 +1,126 @@
+{
+  "timestamp": "2023-07-07T12:44:17.027638700Z",
+  "nodeId": "a8654cdf-4328-47de-81fa-c495589e30c9",
+  "destinationId": "a8654cdf-4328-47de-81fa-c495589e30c1",
+  "detectionReport": {
+    "reportId": "01GGYFBAXGDG7AGAHRZ6XSNY12",
+    "objectId": "01GGYFBAXH4VYRQYEX7S3XGK3H",
+    "taskId": "01GGYFBAXHNV9DN0N74DFX2952",
+    "state": "TestState",
+    "location": {
+      "x": 51.1739726374,
+      "y": -1.82237671048,
+      "z": 788,
+      "xError": 5,
+      "yError": 5,
+      "zError": 5,
+      "coordinateSystem": "LOCATION_COORDINATE_SYSTEM_UTM_M",
+      "datum": "LOCATION_DATUM_WGS84_E",
+      "utmZone": "30U"
+    },
+    "detectionConfidence": 0.99,
+    "trackInfo": [
+      {
+        "type": "TestObject",
+        "value": "TestValue",
+        "error": 1.3
+      }
+    ],
+    "predictionLocation": {
+      "location": {
+        "x": 51.1739726374,
+        "y": -1.82237671048,
+        "z": 788,
+        "xError": 5,
+        "yError": 5,
+        "zError": 5,
+        "coordinateSystem": "LOCATION_COORDINATE_SYSTEM_UTM_M",
+        "datum": "LOCATION_DATUM_WGS84_E",
+        "utmZone": "30U"
+      },
+      "predictedTimestamp": "2023-07-07T12:44:17.027638700Z"
+    },
+    "objectInfo": [
+      {
+        "type": "ABC",
+        "value": "ABC",
+        "error": 1.4
+      }
+    ],
+    "classification": [
+      {
+        "confidence": 0.8,
+        "subClass": [
+          {
+            "type": "Male",
+            "confidence": 0.6,
+            "level": 1
+          }
+        ]
+      }
+    ],
+    "behaviour": [
+      {
+        "type": "loitering",
+        "confidence": 0.6
+      }
+    ],
+    "associatedFile": [
+      {
+        "type": "URL",
+        "url": "ThePathToTheFile"
+      }
+    ],
+    "signal": [
+      {
+        "amplitude": 1.0,
+        "startFrequency": 2.0,
+        "centreFrequency": 3.0,
+        "stopFrequency": 4.0,
+        "pulseDuration": 5.0
+      }
+    ],
+    "associatedDetection": [
+      {
+        "timestamp": "2023-07-07T12:44:17.027638700Z",
+        "nodeId": "a8654cdf-4328-47de-81fa-c495589e30c9",
+        "objectId": "01H4R63D7NVN8444Z5M77WEBY2",
+        "associationType": "ASSOCIATION_RELATION_PARENT"
+      }
+    ],
+    "derivedDetection": [
+      {
+        "timestamp": "2023-07-07T12:44:17.027638700Z",
+        "nodeId": "a8654cdf-4328-47de-81fa-c495589e30c9",
+        "objectId": "01H4R63D7NVN8444Z5M77WEBY2"
+      }
+    ],
+    "enu_velocity": {
+      "eastRate": 1.0,
+      "northRate": 2.0,
+      "upRate": 3.0,
+      "eastRateError": 4.0,
+      "northRateError": 5.0,
+      "upRateError": 6.0
+    },
+    "colour": "Red",
+    "id": "01H4R63D7NVN8444Z5M77WEBY3",
+    "detectionLocation": {
+      "locationList": {
+        "locations": [
+          {
+            "x": 51.1739726374,
+            "y": -1.82237671048,
+            "z": 788,
+            "xError": 5,
+            "yError": 5,
+            "zError": 5,
+            "coordinateSystem": "LOCATION_COORDINATE_SYSTEM_UTM_M",
+            "datum": "LOCATION_DATUM_WGS84_E",
+            "utmZone": "30U"
+          }
+        ]
+      }
+    }
+  }
+}

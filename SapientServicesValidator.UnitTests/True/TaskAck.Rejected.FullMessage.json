@@ -1,0 +1,14 @@
+{
+  "timestamp": "2023-07-07T12:44:17.027638700Z",
+  "nodeId": "a8654cdf-4328-47de-81fa-c495589e30c8",
+  "destinationId": "a8654cdf-4328-47de-81fa-c495589e30c9",
+  "taskAck": {
+    "taskId": "01H4R63D7NVN8444Z5M77WEBY8",
+    "taskStatus": "TASK_STATUS_REJECTED",
+    "reason": [ "Task was rejected by the sensor." ],
+    "associatedFile": {
+      "type": "URL",
+      "url": "ThePathToTheFile"
+    }
+  }
+}

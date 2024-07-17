@@ -1,0 +1,9 @@
+{
+  "timestamp": "2023-07-07T12:44:17.027638700Z",
+  "nodeId": "a8654cdf-4328-47de-81fa-c495589e30c9",
+  "destinationId": "a8654cdf-4328-47de-81fa-c495589e30c8",
+  "error": {
+    "packet": "VGhpcyBpcyBhIHRlc3Qgc3RyaW5nLg==",
+    "errorMessage": [ ]
+  }
+}

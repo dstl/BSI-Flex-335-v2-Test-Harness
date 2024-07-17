@@ -1,0 +1,40 @@
+{
+  "timestamp": "2023-07-07T12:44:17.027638700Z",
+  "nodeId": "a8654cdf-4328-47de-81fa-c495589e30c9",
+  "destinationId": "a8654cdf-4328-47de-81fa-c495589e30c8",
+  "alert": {
+    "alertId": "01H4R63D7NVN8444Z5M77WEBY7",
+    "alertType": "ALERT_TYPE_INFORMATION",
+    "status": "ALERT_STATUS_ACTIVE",
+    "description": "Test information alert",
+    "location": {
+      "x": 318720,
+      "z": 100,
+      "xError": 10,
+      "yError": 10,
+      "zError": 5,
+      "utm_zone": "30U",
+      "coordinateSystem": "LOCATION_COORDINATE_SYSTEM_UTM_M",
+      "datum": "LOCATION_DATUM_WGS84_E"
+    },
+    "regionId": "01H4R63D7NVN8444Z5M77WEBY6",
+    "priority": "DISCRETE_PRIORITY_LOW",
+    "ranking": 0.1,
+    "confidence": 0.5,
+    "associatedFile": [
+      {
+        "type": "URL",
+        "url": "ThePathToTheFile"
+      }
+    ],
+    "associatedDetection": [
+      {
+        "timestamp": "2023-07-07T12:44:17.027638700Z",
+        "nodeId": "a8654cdf-4328-47de-81fa-c495589e30c9",
+        "objectId": "01H4R63D7NVN8444Z5M77WEBY2",
+        "associationType": "ASSOCIATION_RELATION_PARENT"
+      }
+    ],
+    "additionalInformation": "Some additional information."
+  }
+}

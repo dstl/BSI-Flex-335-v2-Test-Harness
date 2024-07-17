@@ -1,0 +1,163 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImportWindowsDesktopTargets>true</ImportWindowsDesktopTargets>
+    <RootNamespace>SapientDmmSimulator</RootNamespace>
+    <AssemblyName>SapientDmmSimulator</AssemblyName>
+	  <AssemblyVersion>3352.5.2.3</AssemblyVersion>
+	  <FileVersion>3352.5.2.3</FileVersion>
+	<VersionPrefix>5.2.3</VersionPrefix>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Default.Alert.json" />
+    <None Remove="Default.AlertAck.json" />
+    <None Remove="Default.DetectionReport.json" />
+    <None Remove="Default.RegistrationAck.json" />
+    <None Remove="Default.StatusReport.json" />
+    <None Remove="Default.Task.ClassificationThreshold.High.json" />
+    <None Remove="Default.Task.ClassificationThreshold.Low.json" />
+    <None Remove="Default.Task.ClassificationThreshold.Medium.json" />
+    <None Remove="Default.Task.DetectionReportRate.High.json" />
+    <None Remove="Default.Task.DetectionReportRate.Low.json" />
+    <None Remove="Default.Task.DetectionReportRate.Medium.json" />
+    <None Remove="Default.Task.DetectionThreshold.High.json" />
+    <None Remove="Default.Task.DetectionThreshold.Low.json" />
+    <None Remove="Default.Task.DetectionThreshold.Medium.json" />
+    <None Remove="Default.Task.Follow.json" />
+    <None Remove="Default.Task.LookAt.json" />
+    <None Remove="Default.Task.Mode.json" />
+    <None Remove="Default.Task.MoveTo.json" />
+    <None Remove="Default.Task.Patrol.json" />
+    <None Remove="Default.Task.Request.Registration.json" />
+    <None Remove="Default.Task.Request.Reset.json" />
+    <None Remove="Default.Task.Request.Start.json" />
+    <None Remove="Default.Task.Request.Status.json" />
+    <None Remove="Default.Task.Request.Stop.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Default.Task.Request.Registration.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Default.Task.Request.Reset.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Default.Task.Request.Start.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Default.Task.Request.Status.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Default.Task.Request.Stop.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Default.Task.DetectionThreshold.High.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Default.Task.DetectionThreshold.Low.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Default.Task.DetectionThreshold.Medium.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Default.Task.DetectionReportRate.High.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Default.Task.DetectionReportRate.Low.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Default.Task.DetectionReportRate.Medium.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Default.Task.ClassificationThreshold.High.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Default.Task.ClassificationThreshold.Low.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Default.Task.ClassificationThreshold.Medium.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Default.Task.Follow.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Default.Task.LookAt.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Default.Task.Mode.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Default.Task.MoveTo.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Default.Task.Patrol.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Default.AlertAck.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Default.DetectionReport.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Default.Alert.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Default.StatusReport.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Default.RegistrationAck.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Google.Protobuf" Version="3.25.1" />
+    <PackageReference Include="StyleCop.Analyzers" Version="1.1.118">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Ulid" Version="1.3.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\ReadSampleSapientMessage\ReadSampleSapientMessage.csproj" />
+    <ProjectReference Include="..\..\SapientServices\SapientServices.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Settings.Designer.cs">
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+
+</Project>

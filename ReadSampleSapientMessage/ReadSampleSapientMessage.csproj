@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+	<VersionPrefix>5.2.3</VersionPrefix>
+	  <AssemblyVersion>3352.5.2.3</AssemblyVersion>
+	  <FileVersion>3352.5.2.3</FileVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SapientServices\SapientServices.csproj" />
+  </ItemGroup>
+
+</Project>

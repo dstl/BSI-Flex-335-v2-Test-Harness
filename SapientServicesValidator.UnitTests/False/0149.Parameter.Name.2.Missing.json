@@ -1,0 +1,73 @@
+{
+  "timestamp": "2023-07-07T12:44:17.027638700Z",
+  "nodeId": "a8654cdf-4328-47de-81fa-c495589e30c9",
+  "destinationId": "a8654cdf-4328-47de-81fa-c495589e30c1",
+  "task": {
+    "taskId": "01H4R63D7NVN8444Z5M77WEBY6",
+    "taskName": "TheTaskName",
+    "taskDescription": "The task description.",
+    "taskStartTime": "2023-07-07T12:44:17.027638700Z",
+    "taskEndTime": "2023-07-07T12:44:17.027638700Z",
+    "control": "CONTROL_START",
+    "region": [
+      {
+        "type": "REGION_TYPE_AREA_OF_INTEREST",
+        "regionId": "01H4R63D7NVN8444Z5M77WEBY6",
+        "regionName": "Car Park",
+        "regionArea": {
+          "locationList": {
+            "locations": [
+              {
+                "x": 51.1739726374,
+                "y": -1.82237671048,
+                "z": 788,
+                "xError": 5,
+                "yError": 5,
+                "zError": 5,
+                "coordinateSystem": "LOCATION_COORDINATE_SYSTEM_UTM_M",
+                "datum": "LOCATION_DATUM_WGS84_E",
+                "utmZone": "30U"
+              }
+            ]
+          }
+        },
+        "classFilter": [
+          {
+            "parameter": {
+              "name": "Value1",
+              "operator": "OPERATOR_ALL",
+              "value": 1.2
+            },
+            "type": "TempType",
+            "subClassFilter": [
+              {
+                "parameter": {
+                  "operator": "OPERATOR_ALL",
+                  "value": 1.2
+                },
+                "type": "TempType",
+                "priority": "DISCRETE_THRESHOLD_LOW"
+              }
+            ],
+            "priority": "DISCRETE_THRESHOLD_LOW"
+          }
+        ],
+        "behaviourFilter": [
+          {
+            "parameter": {
+              "name": "Value3",
+              "operator": "OPERATOR_ALL",
+              "value": 1.2
+            },
+            "type": "TempType",
+            "priority": "DISCRETE_THRESHOLD_LOW"
+          }
+        ]
+      }
+    ],
+    "command": {
+      "request": "Status",
+      "commandParameter": ""
+    }
+  }
+}

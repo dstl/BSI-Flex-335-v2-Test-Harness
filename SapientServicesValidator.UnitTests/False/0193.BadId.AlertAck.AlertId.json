@@ -1,0 +1,10 @@
+{
+  "timestamp": "2023-07-07T12:44:17.027638700Z",
+  "nodeId": "a8654cdf-4328-47de-81fa-c495589e30c8",
+  "destinationId": "a8654cdf-4328-47de-81fa-c495589e30c9",
+  "alertAck": {
+    "alertId": "a8654cdf-4328-47de-81fa-c495589e30c9",
+    "alertAckStatus": "ALERT_ACK_STATUS_ACCEPTED",
+    "reason": [ "Alert was accepted." ]
+  }
+}

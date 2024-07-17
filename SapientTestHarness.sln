@@ -1,0 +1,85 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33723.286
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SapientServices", "SapientServices\SapientServices.csproj", "{0D4F8847-B61B-4445-BA5D-8CB7F5B8CCBA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SapientDatabase", "SapientDatabase\SapientDatabase.csproj", "{6C128236-F1CD-4387-B00F-B4F98D5ABD87}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SapientDataAgent", "SapientDataAgent\SapientDataAgent\SapientDataAgent.csproj", "{B27F37B1-8351-4108-A288-3383D06C7026}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SapientAsmSimulator", "SapientAsmSimulator\SapientAsmSimulator\SapientAsmSimulator.csproj", "{D18D1A6B-0291-4861-BC0F-AF0764B0482A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SapientDmmSimulator", "SapientDmmSimulator\SapientDmmSimulator\SapientDmmSimulator.csproj", "{45C8AA8D-E28F-46B6-8B12-21FBBBA3E647}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SapientServicesValidator.UnitTests", "SapientServicesValidator.UnitTests\SapientServicesValidator.UnitTests.csproj", "{60210BB3-6AB2-41D4-9935-8D51B1620153}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SAPIENTMessageProcessorInterface", "SAPIENTMessageProcessorInterface\SAPIENTMessageProcessorInterface.csproj", "{97311B21-7818-40B9-B620-1F2146111A97}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SAPIENTMessageProcessor", "SAPIENTMessageProcessor\SAPIENTMessageProcessor.csproj", "{59BDABB0-FF2B-4A97-9EDD-55C4C35CAC87}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SAPIENTMessageProcessor.UnitTests", "SAPIENTMessageProcessor.UnitTests\SAPIENTMessageProcessor.UnitTests.csproj", "{87635AFE-C1B9-4AD3-A01E-6674AE09254C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReadSampleSapientMessage", "ReadSampleSapientMessage\ReadSampleSapientMessage.csproj", "{A723E359-DEFC-427D-8D66-F65A30C77B1D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReadSampleSapientMessage.UnitTests", "ReadSampleSapientMessage.UnitTests\ReadSampleSapientMessage.UnitTests.csproj", "{DD532B78-6B6E-45BC-93F3-E0FBF502D503}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0D4F8847-B61B-4445-BA5D-8CB7F5B8CCBA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D4F8847-B61B-4445-BA5D-8CB7F5B8CCBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D4F8847-B61B-4445-BA5D-8CB7F5B8CCBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D4F8847-B61B-4445-BA5D-8CB7F5B8CCBA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C128236-F1CD-4387-B00F-B4F98D5ABD87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C128236-F1CD-4387-B00F-B4F98D5ABD87}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C128236-F1CD-4387-B00F-B4F98D5ABD87}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C128236-F1CD-4387-B00F-B4F98D5ABD87}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B27F37B1-8351-4108-A288-3383D06C7026}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B27F37B1-8351-4108-A288-3383D06C7026}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B27F37B1-8351-4108-A288-3383D06C7026}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B27F37B1-8351-4108-A288-3383D06C7026}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D18D1A6B-0291-4861-BC0F-AF0764B0482A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D18D1A6B-0291-4861-BC0F-AF0764B0482A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D18D1A6B-0291-4861-BC0F-AF0764B0482A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D18D1A6B-0291-4861-BC0F-AF0764B0482A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45C8AA8D-E28F-46B6-8B12-21FBBBA3E647}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45C8AA8D-E28F-46B6-8B12-21FBBBA3E647}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45C8AA8D-E28F-46B6-8B12-21FBBBA3E647}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45C8AA8D-E28F-46B6-8B12-21FBBBA3E647}.Release|Any CPU.Build.0 = Release|Any CPU
+		{60210BB3-6AB2-41D4-9935-8D51B1620153}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60210BB3-6AB2-41D4-9935-8D51B1620153}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60210BB3-6AB2-41D4-9935-8D51B1620153}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60210BB3-6AB2-41D4-9935-8D51B1620153}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97311B21-7818-40B9-B620-1F2146111A97}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97311B21-7818-40B9-B620-1F2146111A97}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97311B21-7818-40B9-B620-1F2146111A97}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97311B21-7818-40B9-B620-1F2146111A97}.Release|Any CPU.Build.0 = Release|Any CPU
+		{59BDABB0-FF2B-4A97-9EDD-55C4C35CAC87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59BDABB0-FF2B-4A97-9EDD-55C4C35CAC87}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59BDABB0-FF2B-4A97-9EDD-55C4C35CAC87}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59BDABB0-FF2B-4A97-9EDD-55C4C35CAC87}.Release|Any CPU.Build.0 = Release|Any CPU
+		{87635AFE-C1B9-4AD3-A01E-6674AE09254C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87635AFE-C1B9-4AD3-A01E-6674AE09254C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87635AFE-C1B9-4AD3-A01E-6674AE09254C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87635AFE-C1B9-4AD3-A01E-6674AE09254C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A723E359-DEFC-427D-8D66-F65A30C77B1D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A723E359-DEFC-427D-8D66-F65A30C77B1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A723E359-DEFC-427D-8D66-F65A30C77B1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A723E359-DEFC-427D-8D66-F65A30C77B1D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD532B78-6B6E-45BC-93F3-E0FBF502D503}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD532B78-6B6E-45BC-93F3-E0FBF502D503}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD532B78-6B6E-45BC-93F3-E0FBF502D503}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD532B78-6B6E-45BC-93F3-E0FBF502D503}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F9041CBA-2A04-4D59-9CE3-00B2D70F08DD}
+	EndGlobalSection
+EndGlobal

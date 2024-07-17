@@ -1,0 +1,90 @@
+{
+  "timestamp": "2023-07-07T12:44:17.027638700Z",
+  "nodeId": "a8654cdf-4328-47de-81fa-c495589e30c9",
+  "destinationId": "a8654cdf-4328-47de-81fa-c495589e30c1",
+  "statusReport": {
+    "reportId": "01GGYFBAV4EEPB1398MKQ47E6E",
+    "system": "SYSTEM_OK",
+    "info": "INFO_NEW",
+    "activeTaskId": "01H4R63D7NVN8444Z5M77WEBY7",
+    "mode": "TestMode",
+    "power": {
+      "source": "POWERSOURCE_MAINS",
+      "status": "POWERSTATUS_OK",
+      "level": 1
+    },
+    "nodeLocation": {
+      "x": 51.1739726374,
+      "y": -1.82237671048,
+      "z": 788,
+      "xError": 5,
+      "yError": 5,
+      "zError": 5,
+      "coordinateSystem": "LOCATION_COORDINATE_SYSTEM_UTM_M",
+      "datum": "LOCATION_DATUM_WGS84_E",
+      "utmZone": "30U"
+    },
+    "fieldOfView": {
+      "locationList": {
+        "locations": [
+          {
+            "x": 51.1739726374,
+            "y": -1.82237671048,
+            "z": 788,
+            "xError": 5,
+            "yError": 5,
+            "zError": 5,
+            "coordinateSystem": "LOCATION_COORDINATE_SYSTEM_UTM_M",
+            "datum": "LOCATION_DATUM_WGS84_E",
+            "utmZone": "30U"
+          }
+        ]
+      }
+    },
+    "coverage": [
+      {
+        "locationList": {
+          "locations": [
+            {
+              "x": 51.1739726374,
+              "y": -1.82237671048,
+              "z": 788,
+              "xError": 5,
+              "yError": 5,
+              "zError": 5,
+              "coordinateSystem": "LOCATION_COORDINATE_SYSTEM_UTM_M",
+              "datum": "LOCATION_DATUM_WGS84_E",
+              "utmZone": "30U"
+            }
+          ]
+        }
+      }
+    ],
+    "obscuration": [
+      {
+        "locationList": {
+          "locations": [
+            {
+              "x": 51.1739726374,
+              "y": -1.82237671048,
+              "z": 788,
+              "xError": 5,
+              "yError": 5,
+              "zError": 5,
+              "coordinateSystem": "LOCATION_COORDINATE_SYSTEM_UTM_M",
+              "datum": "LOCATION_DATUM_WGS84_E",
+              "utmZone": "30U"
+            }
+          ]
+        }
+      }
+    ],
+    "status": [
+      {
+        "statusLevel": "STATUS_LEVEL_INFORMATION_STATUS",
+        "statusType": "STATUS_TYPE_WEATHER",
+        "statusValue": "Rain"
+      }
+    ]
+  }
+}

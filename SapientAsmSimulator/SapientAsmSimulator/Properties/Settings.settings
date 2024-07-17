@@ -1,0 +1,90 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="SapientASMsimulator.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="SapientDataAgentAddress" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">127.0.0.1</Value>
+    </Setting>
+    <Setting Name="SapientDataAgentPort" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">14000</Value>
+    </Setting>
+    <Setting Name="LogDirectory" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">../Log/Log</Value>
+    </Setting>
+    <Setting Name="Log" Type="System.Boolean" Scope="Application">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="LogPrefix" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">ASM_sendlog</Value>
+    </Setting>
+    <Setting Name="IncrementIntervalSeconds" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">3600</Value>
+    </Setting>
+    <Setting Name="PlaybackInterval_ms" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="ASM_Id" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="maxLatitude" Type="System.Double" Scope="Application">
+      <Value Profile="(Default)">5777550</Value>
+    </Setting>
+    <Setting Name="IndividualDetectionIDs" Type="System.Boolean" Scope="Application">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="PacketFragmentDelay" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="sendNullTermination" Type="System.Boolean" Scope="Application">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="DetectionImageURL" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">image</Value>
+    </Setting>
+    <Setting Name="DefaultHorizontalFieldOfView" Type="System.Double" Scope="Application">
+      <Value Profile="(Default)">8</Value>
+    </Setting>
+    <Setting Name="SensorType" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">sensorType</Value>
+    </Setting>
+    <Setting Name="TestMessageRoot" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">C:\StarTeam\00010855-Sapient\root\06_Test\Test ConfigurationV3\XML</Value>
+    </Setting>
+    <Setting Name="PlatformType" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Static</Value>
+    </Setting>
+    <Setting Name="UTMzone" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">30U</Value>
+    </Setting>
+    <Setting Name="ScanType" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Steerable</Value>
+    </Setting>
+    <Setting Name="ExpectedResponseFileName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Responses.txt</Value>
+    </Setting>
+    <Setting Name="SensorName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Sapient</Value>
+    </Setting>
+    <Setting Name="startLatitude" Type="System.Double" Scope="Application">
+      <Value Profile="(Default)">-1.1008472</Value>
+    </Setting>
+    <Setting Name="startLongitude" Type="System.Double" Scope="Application">
+      <Value Profile="(Default)">51.38231</Value>
+    </Setting>
+    <Setting Name="detectionCoordinateSystem" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Location</Value>
+    </Setting>
+    <Setting Name="DetectionSubClassType" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Bird</Value>
+    </Setting>
+    <Setting Name="DetectionClassType" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Animal</Value>
+    </Setting>
+    <Setting Name="FixedASMId" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">01H0N6FPMFYSETQPCMZXJ39PPA</Value>
+    </Setting>
+    <Setting Name="ValidationEnabled" Type="System.Boolean" Scope="Application">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

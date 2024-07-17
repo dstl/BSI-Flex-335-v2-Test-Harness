@@ -1,0 +1,115 @@
+{
+  "timestamp": "2022-11-03T10:05:06.141204500Z",
+  "nodeId": "a8654cdf-4328-47de-81fa-c495589e30c9",
+  "destinationId": "a8654cdf-4328-47de-81fa-c495589e30c8",
+  "registration": {
+    "nodeDefinition": [
+      {
+        "nodeType": "NODE_TYPE_CAMERA",
+        "nodeSubType": [
+          "InfraredCamera"
+        ]
+      },
+      {
+        "nodeType": "NODE_TYPE_LIDAR",
+        "nodeSubType": [
+          "SeeThroughWall"
+        ]
+      }
+    ],
+    "icdVersion": "BSI Flex 335 v2.0",
+    "capabilities": [
+      {
+        "category": "Test",
+        "type": "NODE_TYPE_CAMERA",
+        "value": "Test",
+        "units": "Url"
+      }
+    ],
+    "statusDefinition": {
+        "statusInterval": {
+        "units": "TIME_UNITS_SECONDS",
+        "value": 5
+      }
+    },
+    "modeDefinition": [
+      {
+        "modeName": "Default",
+        "modeType": "MODE_TYPE_PERMANENT",
+        "settleTime": {
+          "units": "TIME_UNITS_HOURS",
+          "value": "30"
+        },
+        "task": {
+          "concurrentTasks": "0",
+          "regionDefinition": {
+            "regionType": [ "REGION_TYPE_AREA_OF_INTEREST" ],
+            "settleTime": {
+              "units": "TIME_UNITS_SECONDS",
+              "value": 1
+            },
+            "regionArea": [
+              {
+                "locationUnits": "LOCATION_COORDINATE_SYSTEM_UTM_M",
+                "locationDatum": "LOCATION_DATUM_WGS84_E",
+                "zone": "30U"
+              }
+            ],
+            "classFilterDefinition": [
+              {
+                "filterParameter": [
+                  {
+                    "parameter": "Position",
+                    "operators": [ "OPERATOR_ALL" ]
+                  }
+                ],
+                "subClassDefinition": [
+                  {
+                    "filterParameter": [
+                      {
+                        "parameter": "Position",
+                        "operators": [ "OPERATOR_ALL" ]
+                      }
+                    ],
+                    "level": 0,
+                    "type": "Vehicle",
+                    "subClassDefinition": [
+                      {
+                        "filterParameter": [
+                          {
+                            "parameter": "Position2",
+                            "operators": [ "OPERATOR_GREATER_THAN" ]
+                          }
+                        ],
+                        "level": 1,
+                        "type": "Human"
+                      }
+                    ]
+                  }
+                ],
+                "type": "Vehicle"
+              }
+            ],
+            "behaviourFilterDefinition": [
+              {
+                "filterParameter": [
+                  {
+                    "parameter": "Position",
+                    "operators": [ "OPERATOR_ALL" ]
+                  }
+                ],
+                "type": "Running"
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "configData": [
+      {
+        "manufacturer": "ACME",
+        "model": "Vision123"
+      }
+    ]
+  }
+}

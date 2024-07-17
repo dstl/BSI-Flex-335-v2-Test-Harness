@@ -1,0 +1,47 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+	  <AssemblyVersion>3352.5.2.3</AssemblyVersion>
+	  <FileVersion>3352.5.2.3</FileVersion>
+	<VersionPrefix>5.2.3</VersionPrefix>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentValidation.AspNetCore" Version="11.3.0" />
+    <PackageReference Include="Google.Protobuf" Version="3.25.1" />
+    <PackageReference Include="Grpc.Tools" Version="2.60.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="log4net" Version="2.0.15" />
+    <PackageReference Include="Ulid" Version="1.3.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SAPIENTMessageProcessorInterface\SAPIENTMessageProcessorInterface.csproj" />
+    <ProjectReference Include="..\SAPIENTMessageProcessor\SAPIENTMessageProcessor.csproj" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <Protobuf Include="sapient_msg\bsi_flex_335_v2_0\alert.proto" />
+    <Protobuf Include="sapient_msg\bsi_flex_335_v2_0\alert_ack.proto" />
+    <Protobuf Include="sapient_msg\bsi_flex_335_v2_0\associated_detection.proto" />
+    <Protobuf Include="sapient_msg\bsi_flex_335_v2_0\associated_file.proto" />
+    <Protobuf Include="sapient_msg\bsi_flex_335_v2_0\location.proto" />
+    <Protobuf Include="sapient_msg\bsi_flex_335_v2_0\range_bearing.proto" />
+    <Protobuf Include="sapient_msg\bsi_flex_335_v2_0\velocity.proto" />
+    <Protobuf Include="sapient_msg\bsi_flex_335_v2_0\detection_report.proto" />
+    <Protobuf Include="sapient_msg\bsi_flex_335_v2_0\error.proto" />
+	<Protobuf Include="sapient_msg\bsi_flex_335_v2_0\follow.proto" />
+    <Protobuf Include="sapient_msg\proto_options.proto" />
+    <Protobuf Include="sapient_msg\bsi_flex_335_v2_0\registration.proto" />
+    <Protobuf Include="sapient_msg\bsi_flex_335_v2_0\registration_ack.proto" />
+    <Protobuf Include="sapient_msg\bsi_flex_335_v2_0\sapient_message.proto" />
+    <Protobuf Include="sapient_msg\bsi_flex_335_v2_0\status_report.proto" />
+    <Protobuf Include="sapient_msg\bsi_flex_335_v2_0\task.proto" />
+    <Protobuf Include="sapient_msg\bsi_flex_335_v2_0\task_ack.proto" />
+  </ItemGroup>
+</Project>

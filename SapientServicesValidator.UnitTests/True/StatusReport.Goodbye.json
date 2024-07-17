@@ -1,0 +1,11 @@
+{
+  "timestamp": "2023-07-07T12:44:17.027638700Z",
+  "nodeId": "a8654cdf-4328-47de-81fa-c495589e30c8",
+  "destinationId": "a8654cdf-4328-47de-81fa-c495589e30c9",
+  "statusReport": {
+    "reportId": "01GGYFBAV4EEPB1398MKQ47E6E",
+    "system": "SYSTEM_GOODBYE",
+    "info": "INFO_NEW",
+    "mode": "TestMode"
+  }
+}

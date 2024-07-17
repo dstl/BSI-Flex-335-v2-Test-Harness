@@ -1,0 +1,130 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImportWindowsDesktopTargets>true</ImportWindowsDesktopTargets>
+    <RootNamespace>SapientASMsimulator</RootNamespace>
+    <AssemblyName>SapientASMsimulator</AssemblyName>
+    <EnableNETAnalyzers>true</EnableNETAnalyzers>
+    <VersionPrefix>5.2.3</VersionPrefix>
+	  <AssemblyVersion>3352.5.2.3</AssemblyVersion>
+	  <FileVersion>3352.5.2.3</FileVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Default.Alert.json" />
+    <None Remove="Default.DetectionReport.json" />
+    <None Remove="Default.Registration.json" />
+    <None Remove="Default.StatusReport.json" />
+    <None Remove="Default.TaskAck.ClassificationThreshold.json" />
+    <None Remove="Default.TaskAck.DetectionReportRate.json" />
+    <None Remove="Default.TaskAck.DetectionThreshold.json" />
+    <None Remove="Default.TaskAck.Follow.json" />
+    <None Remove="Default.TaskAck.LookAt.json" />
+    <None Remove="Default.TaskAck.ModeChange.json" />
+    <None Remove="Default.TaskAck.MoveTo.json" />
+    <None Remove="Default.TaskAck.NotSupported.json" />
+    <None Remove="Default.TaskAck.Patrol.json" />
+    <None Remove="Default.TaskAck.Request.Registration.json" />
+    <None Remove="Default.TaskAck.Request.Reset.json" />
+    <None Remove="Default.TaskAck.Request.Start.json" />
+    <None Remove="Default.TaskAck.Request.Status.json" />
+    <None Remove="Default.TaskAck.Request.Stop.json" />
+    <None Remove="Default.TaskAck.Request.Unknown.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Default.TaskAck.MoveTo.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Default.TaskAck.Patrol.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Default.TaskAck.Follow.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Default.TaskAck.LookAt.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Default.TaskAck.ClassificationThreshold.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Default.TaskAck.ModeChange.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Default.TaskAck.DetectionThreshold.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Default.TaskAck.DetectionReportRate.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Default.TaskAck.Request.Registration.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Default.TaskAck.Request.Status.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Default.TaskAck.Request.Reset.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Default.TaskAck.Request.Stop.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Default.TaskAck.Request.Unknown.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Default.TaskAck.Request.Start.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Default.TaskAck.NotSupported.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Default.Alert.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Default.Registration.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Default.StatusReport.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Default.DetectionReport.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Google.Protobuf" Version="3.25.1" />
+    <PackageReference Include="log4net" Version="2.0.15" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="Ulid" Version="1.3.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\ReadSampleSapientMessage\ReadSampleSapientMessage.csproj" />
+    <ProjectReference Include="..\..\SapientServices\SapientServices.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Settings.Designer.cs">
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="app.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+
+</Project>
