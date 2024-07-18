@@ -35,6 +35,13 @@ The minimum hardware requirements for running the SAPIENT test harness are liste
 ## Build
 Consult the User Guide for instructions to build the software from the source code.
 
+## Configuring and Running the Test Harness
+Consult the User Guide for full instructions for configuring and running the software. It should
+be noted that configuration of the Test Harness is split across multiple config files which a 
+novice user may find confusing. It is recommended to re-install and re-configure the test harness
+from a clean copy of the software should any difficulties be experienced, particularly with 
+network connections of components being tested.
+
 ## Limitations
 This version (5.2.3) of the SAPIENT Test Harness is only compatibile with the BSI Flex 335 version 2 
 of SAPIENT. The test harness is not capable of testing earlier versions of SAPIENT. Although SAPIENT
@@ -46,9 +53,11 @@ only runs on Microsoft Windows platforms.
 CPU to run at, or near to 100%. This may cause latency and other poor performance issues, but 
 should not impact functionality. It is recommended not to run these two applications at the same 
 time.
+
 2.) The timestamp in PGadmin does not align with the test harness timestamp. This is beleived to 
 be an issue that affected legacy versions of the software and has not been fixed in this release.
-3.) Alert Responses are not logged to the SQL database. This is beleived to be an issue that 
+
+3.) Alert Response messages are not logged to the SQL database. This is beleived to be an issue that 
 affected legacy versions of the software and has not been fixed in this release.
 
 ## License
